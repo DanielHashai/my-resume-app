@@ -1,72 +1,93 @@
 @import "../../styles//contants.scss";
 
-.wrapper{
-background: #B9B8C7;
-    .container{
-        flex-direction: column;
-        gap: 2rem;
+.wrapper {
+  background: #B9B8C7;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%; // Ensure the container takes the full width
 
-
-        .experiences{
-            width: 100%;
-            flex-direction: column;
-            gap: 1.4rem;
-            position: relative;
-
-            .exp{
-                width: 100%;
-                justify-content: space-between;
-                line-height: 40px;
-                align-items: flex-start;
-        
-                >div{
-                    flex: 1;
-                }
-                .role{
-                    margin-left: 2rem;
-                }
-        
-        
-            }
-
-        .progressbar{
-            position: absolute;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.4rem;
-            left: 45%;
-
-            .line{
-                position: absolute;
-                height: 92%;
-                width: 2px;
-                background-image: linear-gradient(black 33%,rgba(255,255,255,0) 0%);
-                background-position: right;
-                background-size: 2px 30px;
-                background-repeat: repeat-y;
-                left: 48%;
-                z-index: 1;
-                border-radius: 5px;
-
-            }
-            >div{
-                flex: 1;
-                padding-top: .8rem;
-                z-index: 2;
-
-                .circle{
-                    border-radius: 50%;
-                    background: black;
-                    width: 1.2rem;
-                    height: 20px;
-
-                }
-            }
-
-
-        }
-
-        }
+    .experiences {
+      width: 100%;
+      flex-direction: column;
+      gap: 1.4rem;
+      position: relative;
+      display: flex; // Ensure flexbox works
     }
+
+    .exp {
+      width: 100%;
+      justify-content: space-between;
+      line-height: 40px;
+      align-items: flex-start;
+      display: flex; // Use flexbox for item alignment
+      
+      >div {
+        flex: 1;
+      }
+
+      .role {
+        margin-left: 2rem;
+      }
+    }
+
+    .progressbar {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      left: 45%;
+      z-index: 0;
+      display: none; // Hide on mobile for now
+
+      .line {
+        position: absolute;
+        height: 92%;
+        width: 2px;
+        background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+        background-position: right;
+        background-size: 2px 30px;
+        background-repeat: repeat-y;
+        left: 48%;
+        z-index: 1;
+        border-radius: 5px;
+      }
+
+      >div {
+        flex: 1;
+        padding-top: 0.8rem;
+        z-index: 2;
+
+        .circle {
+          border-radius: 50%;
+          background: black;
+          width: 1.2rem;
+          height: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; // Ensure column layout on small screens
+      }
+
+      .experiences {
+        position: static; // Remove any absolute positioning for better mobile handling
+      }
+
+      .progressbar {
+        display: none; // Hide progress bar on smaller screens (you can adjust this based on design preference)
+      }
+
+      .exp {
+        flex-direction: column; // Stack experience items vertically on smaller screens
+        margin-left: 0;
+        gap: 1rem; // Adjust gap for mobile devices
+      }
+    }
+  }
 }
