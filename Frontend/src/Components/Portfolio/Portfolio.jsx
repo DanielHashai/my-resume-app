@@ -33,7 +33,7 @@ function Portfolio() {
               <div className={ `flexCenter ${css.heading}`}>
                   <div>
                       <span className='primaryText'>
-                          My latest Projects!
+                        Latest Projects!
                       </span>
                       <p style={{marginTop:"10px"}}>
                          Clicking on a project below will redirect you to the source code on my GitHub account

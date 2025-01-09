@@ -67,7 +67,7 @@ const Experties = () => {
           className={`${css.rightSide}`}>
           <span className='primaryText'>How Can I Help You?</span>
           {
-             <span className='secondaryText' >As a passionate Full Stack Web Developer, I have a deep understanding of front-end and back-end technologies. I have expertise in developing and maintaining scalable web applications using frameworks such as React, Angular, and Node.js. My skills also include database management</span>
+             <span className='secondaryText' >Driven by a passion for integration and automation, I consistently push the boundaries of what’s possible, delivering solutions that are both effective and cutting-edge.</span>
           }
          
               </motion.div>
