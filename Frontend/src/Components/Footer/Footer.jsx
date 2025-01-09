@@ -35,7 +35,7 @@ const Footer = () => {
             Lets Make History <hr />
           </span>
           <div className="button-container">
-            <a href="mailto:aaronhashai@gmail.com" className="secondaryText">
+            <a href="mailto:danielhashai.dh@gmail.com" className="secondaryText">
               {" "}
               <EmailIcon color="success" />{" "}
             </a>{" "}

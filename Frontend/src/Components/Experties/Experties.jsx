@@ -17,7 +17,7 @@ const Experties = () => {
 
 
 
-        <motion.a href=  "mailto:aaronhashai@gmail.com"
+        <motion.a href=  "mailto:danielhashai.dh@gmail.com"
                 
                 variants={fadeIn("right","tween",(1) * 0.1,1)} initial="hidden" whileInView="show" viewport={{once:false,amount:0.25}}
         

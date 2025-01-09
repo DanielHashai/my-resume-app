@@ -4,14 +4,40 @@ import { motion } from "framer-motion";
 import { staggerContainer, fadeIn, slideIn } from "../../utils/motion";
 
 const Hero = () => {
-  const [time, setTime] = useState(
-    new Date().toLocaleString("en-US", { timeZone: "Asia/Jerusalem" })
+  const [dateTime, setDateTime] = useState(
+    new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Asia/Jerusalem",
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }).format(new Date()) +
+      " " +
+      new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Jerusalem",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false,
+      }).format(new Date())
   );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(
-        new Date().toLocaleString("en-US", { timeZone: "Asia/Jerusalem" })
+      setDateTime(
+        new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Asia/Jerusalem",
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+        }).format(new Date()) +
+          " " +
+          new Intl.DateTimeFormat("en-US", {
+            timeZone: "Asia/Jerusalem",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false,
+          }).format(new Date())
       );
     }, 1000);
 
@@ -27,7 +53,7 @@ const Hero = () => {
           justifyItems: "right",
         }}
       >
-        <p>{time}</p>
+        <p>{dateTime}</p>
       </div>
       <motion.div
         variants={staggerContainer}
