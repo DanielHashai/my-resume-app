@@ -28,7 +28,13 @@ function Header() {
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>
-          
+          <img
+            style={{
+              borderRadius: "10px",
+            }}
+            src="./techlogo.png"
+            alt=""
+          />
         </div>
         <ul
           style={getMenuStyles(menuOpened)}
