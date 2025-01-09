@@ -106,7 +106,7 @@ class PersonalDataService {
         topic: "Connectop LTD -  2023 - Present",
         role: "Automation Team Lead & Senior Programmer",
         detail:
-          "Lead the development and implementation of automated solutions to enhance operational efficiency.Utilize a range of software technologies, including AI, to create innovative solutions tailored to client needs.Continuously explore and integrate new technologies to improve and expand automation capabilities.Collaborate with cross-functional teams to ensure seamless integration of automated processes.Maintain a strong focus on innovation, constantly seeking and developing better solutions for our customers.",
+          "Key Responsibilities: 1. Lead the development and implementation of automated solutions to enhance operational efficiency. 2. Utilize a range of software technologies, including AI, to create innovative solutions tailored to client needs. 3. Continuously explore and integrate new technologies to improve and expand automation capabilities.Collaborate with cross-functional teams to ensure seamless integration of automated processes. 4. Maintain a strong focus on innovation, constantly seeking and developing better solutions for our customers.",
       },
       {
         id: 2,

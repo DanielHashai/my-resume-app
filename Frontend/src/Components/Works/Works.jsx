@@ -38,7 +38,7 @@ const Works = () => {
     >
       <a className="anchor" id="works"></a>
       <div className={` flexCenter innerWidth ${css.container}`}>
-        <span className="primaryText yPaddings">My Work Experience</span>
+        <span className="primaryText yPaddings">Work Experience</span>
         <div className={`flexCenter ${css.experiences}`}>
           {above.map((exp, i) => {
             return (

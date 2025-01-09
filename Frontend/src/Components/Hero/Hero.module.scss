@@ -62,8 +62,23 @@
       }
     }
     .clocker {
-      @media (max-width: $sm), (max-width: $md) {
-        font-size: 1px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 100px;
+
+      p {
+        font-weight: 800;
+        font-size: 100px;
+      }
+
+      @media (max-width: $sm) {
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 20px; // Adjust to make it smaller
+        }
       }
     }
 

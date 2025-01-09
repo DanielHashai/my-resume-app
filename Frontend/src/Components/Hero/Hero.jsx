@@ -24,17 +24,10 @@ const Hero = () => {
         className={css.clocker}
         style={{
           justifyContent: "flex",
-          justifyItems:"right"
+          justifyItems: "right",
         }}
       >
-        <p
-          style={{
-            fontWeight: 800,
-            fontSize: "40px",
-          }}
-        >
-          {time}
-        </p>
+        <p>{time}</p>
       </div>
       <motion.div
         variants={staggerContainer}
